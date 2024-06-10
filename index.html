@@ -69,7 +69,7 @@
             </li>
             <li><a class="nav-link scrollto" href="#about">Why HIRO</a></li>
             <li><a class="nav-link scrollto" href="#team">Roll Out</a></li>
-            <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
             <li>
               <a class="nav-link scrollto" href="#services"
                 >Additional Services</a
@@ -353,12 +353,11 @@
           >
             <div class="col-lg-5">
               <i class="ri-checkbox-circle-line"></i>
-              <h4>INTEGRATED PLATFORM</h4>
+              <h4>INTEGRATION READY</h4>
             </div>
             <div class="col-lg-7">
               <p>
-                HIRO is integration ready. We are able to work with existing
-                portals to improve user experience and enhance usability.
+                HIRO can act as a single platform. It can be integrated to any internal portal while maintaining security.
               </p>
             </div>
           </div>
@@ -733,7 +732,7 @@
       <!-- End Team Section -->
 
       <!-- ======= Pricing Section ======= -->
-      <section id="pricing" class="pricing">
+      <!-- <section id="pricing" class="pricing">
         <div class="container">
           <div class="section-title">
             <h2>Pricing</h2>
@@ -820,7 +819,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Pricing Section -->
 
       <!-- ======= Services Section ======= -->
@@ -1050,17 +1049,13 @@
               data-aos-delay="300"
             >
               <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
+                name="submit-to-google-sheet"                                      
                 class="php-email-form"
               >
                 <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
+                  <input                    
+                    name="Name"
+                    class="form-control"                    
                     placeholder="Your Name"
                     required
                   />
@@ -1069,8 +1064,7 @@
                   <input
                     type="email"
                     class="form-control"
-                    name="email"
-                    id="email"
+                    name="Email"                    
                     placeholder="Your Email"
                     required
                   />
@@ -1079,8 +1073,7 @@
                   <input
                     type="text"
                     class="form-control"
-                    name="subject"
-                    id="subject"
+                    name="Subject"                    
                     placeholder="Subject"
                     required
                   />
@@ -1088,25 +1081,37 @@
                 <div class="form-group">
                   <textarea
                     class="form-control"
-                    name="message"
+                    name="Messages"
                     rows="5"
                     placeholder="Message"
                     required
                   ></textarea>
-                </div>
+                </div>     
+                <!-- <div class="form-group">
+                  <label for="time">Provide time: </label>
+                  <input class="button" type="time" name="Date1" id="dateDisplay">
+                </div>                           -->
                 <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
+                  <div class="box" style="color: steelblue;" id="msg">                                         
+                    
                   </div>
                 </div>
+                
+                <!-- <div class="my-3">
+                  <div class="box" style="color: steelblue;">
+                    <output name="Date1" id="dateDisplay"></output>                    
+                  </div>
+                </div> -->
+                <!-- <div class="my-3">
+                  <div class="box" style="color: steelblue;" id="dateDisplay">
+                    
+                  </div>
+                </div> -->                
                 <div class="text-center">
-                  <button type="submit" name="submit">Send Message</button>
+                  <button type="submit">Send Message</button>
                 </div>
               </form>
-            </div>
-          </div>
+            </div>            
         </div>
       </section>
       <!-- End Contact Section -->
@@ -1161,5 +1166,11 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script src=".vscode\receivingEmail.js"></script>
+    
+  
+  
+  
   </body>
 </html>
